@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Baja de Cita</title>
+    <link rel="stylesheet" href="/css/baja_citas.css">
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: url('img/bg.jpg') no-repeat center top;
+        background-size: cover;
+        text-align: center;
+        padding: 50px;
+    }
+    
+    .container {
+        background-color: rgba(242, 242, 242, 0.9);
+        padding: 40px;
+        border-radius: 20px;
+        display: inline-block;
+    }
+    
+    h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    
+    button, input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 1em;
+        border: none;
+        background-color: #767676;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover, input[type="submit"]:hover {
+        background-color: #555;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <h1>Baja de Cita</h1>
+        <button id="viewAppointments">Ver Citas Agendadas</button>
+        
+        <div id="cancelAppointmentForm" class="hidden">
+            <form>
+                <label for="appointmentDetails">Detalles de la Cita:</label>
+                <input type="text" id="appointmentDetails" name="appointmentDetails">
+                
+                <input type="submit" value="Cancelar Cita">
+            </form>
+        </div>
+        
+        <div id="confirmationMessage" class="hidden">
+            Mensaje de confirmación o error aparecerá aquí.
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
